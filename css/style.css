@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,400;1,500&family=Playfair+Display&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  font-family: "Heebo", sans-serif;
+}
+
+.landing {
+  min-height: 100vh;
+  background-size: cover;
+  padding: 0rem 5rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 10vh;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+.nav-links li > a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 200;
+  padding-left: 3rem;
+  color: black;
+}
+/* drop list */
+.drop-list {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  font-size: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 4rem;
+}
+.drop-list li {
+  overflow: hidden;
+}
+.drop-list li > a {
+  display: inline-block;
+  text-decoration: none;
+  text-emphasis: none;
+  color: black;
+  transform: translateX(100%);
+  transition: all 0.3s ease-in-out;
+  transition: transform 1s ease-in;
+}
+.drop-list li > a:hover {
+  color: white;
+  text-shadow: 5px 5px 5px #d3bdb0a6;
+}
+
+.drop-list li > a.active {
+  transform: translateX(0%);
+}
+#logo {
+  font-family: "Lobster", cursive;
+  font-weight: lighter;
+  font-size: 2rem;
+}
+/* Hero section */
+.big-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  font-size: 5rem;
+  font-family: "Lobster", cursive;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.5rem;
+  font-weight: 200;
+  color: rgb(61, 61, 61);
+}
+.small-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -200%);
+  font-size: 1.35rem;
+  font-family: "Lobster", cursive;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.5rem;
+  font-weight: 200;
+  color: rgb(61, 61, 61);
+}
+.bg-back {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  box-shadow: 10px 5px 15px #c1ae9f;
+}
+
+#bg-video-1 {
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.intro {
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider {
+  background: #f8f3ed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+}
+
+.intro-text {
+  color: rgb(233, 233, 233);
+  font-family: "Heebo", sans-serif;
+  font-size: 3rem;
+}
+
+.hide {
+  background: black;
+  overflow: hidden;
+}
+
+.hide span {
+  transform: translateY(100%);
+  display: inline-block;
+}
+
+/* nav side */
+body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #f8f3ed !important;
+}
+
+#sidenav {
+  position: fixed;
+  width: 5%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: #d3bdb0;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: sp;
+}
+
+.hamburger {
+  /* display: none; */
+  cursor: pointer;
+  position: relative;
+  z-index: 1000;
+  transform: rotate(0deg) !important;
+}
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-8px);
+}
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.bar {
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: rgb(61, 61, 61);
+
+  transition: all 0.3s ease-in-out;
+}
+.logo-name {
+  display: block;
+  width: 200%;
+
+  font-size: 1.5rem;
+  font-weight: 500;
+  transform: rotate(-90deg);
+}
+/* drop down */
+.drop-down {
+  position: fixed;
+  top: -100%;
+  right: 0;
+  width: calc(100% - 5%);
+  height: 100vh;
+  transition: all 0.7s ease-in;
+  transition-delay: 0.3s;
+  z-index: 100;
+  background-color: #89937c;
+}
+.drop-down.active {
+  top: 0;
+}
+
+/* main section */
+.main-sec {
+  width: 95%;
+  margin: 0;
+  position: relative;
+  margin-left: auto;
+}

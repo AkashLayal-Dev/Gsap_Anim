@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <title>Slide Animation</title>
+  </head>
+  <body>
+    <div class="drop-down">
+      <ul class="drop-list">
+        <li><a href="#" class="drop-anchor">Blogs</a></li>
+        <li><a href="#" class="drop-anchor">Services</a></li>
+        <li><a href="#" class="drop-anchor">About Us</a></li>
+        <li><a href="#" class="drop-anchor">Contact Us</a></li>
+        <li><a href="#" class="drop-anchor">Explore More</a></li>
+      </ul>
+    </div>
+    <nav id="sidenav">
+      <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+    <main>
+
+      <section class="landing">
+        <nav>
+          <h1 id="logo">Contentegy</h1>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <h2 class="big-text">Stay With Me</h2>
+        <p class="small-text">Inspiring you</p>
+        <div class="bg-back">
+          <video width="540" autoplay="autoplay" loop>
+            <source src="./video/bg-video-2.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+    </main>
+    <div class="intro">
+      <div class="intro-text">
+        <h1 class="hide">
+          <span class="text">Creating inovation</span>
+        </h1>
+        <h1 class="hide">
+          <span class="text">For Everyday</span>
+        </h1>
+        <h1 class="hide">
+          <span class="text">people.</span>
+        </h1>
+      </div>
+    </div>
+    <div class="slider"></div>
+
+    <!-- main sec -->
+    <section class="main-sec">
+      <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi quaerat provident aspernatur quisquam ex, eligendi hic nam quidem sed quas, quis distinctio. Repellat vitae ipsam magnam earum numquam sed at.</div>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
